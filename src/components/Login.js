@@ -20,7 +20,6 @@ function Login({ setUser }) {
         <button onClick={handleSubmit} type="submit">
           Submit
         </button>
-        {username}
       </form>
     </div>
   );

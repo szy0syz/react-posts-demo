@@ -8,6 +8,7 @@
 // App.js
 import React from 'react';
 import Login from './components/Login';
+import Header from './components/Header';
 
 function App() {
   const [user, setUser] = React.useState('');
@@ -22,9 +23,9 @@ function App() {
 export default App;
 
 
-// ---------------
+// ----------------------
 // Login.js
-import React from 'react';
+
 
 function Login({ setUser }) {
   const [username, setUsername] = React.useState('');
@@ -52,5 +53,14 @@ function Login({ setUser }) {
   );
 }
 
-export default Login;
+
+// ----------------------
+// Header.js
+function Header({ user, setUser }) {
+  return (
+    <div>
+      Welcome, {user}!<button onClick={() => setUser('')}>Logout</button>
+    </div>
+  );
+}
 ```
