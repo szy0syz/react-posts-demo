@@ -123,3 +123,5 @@ function CreatePost({ user, posts, setPosts }) {
   );
 }
 ```
+
+> 完成 mini post system
