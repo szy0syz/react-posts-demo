@@ -1,29 +1,3 @@
-# React-Instagram-Clone
-
-## Ch1
-
-- mini login system
-
-```js
-// App.js
-import React from 'react';
-import Login from './components/Login';
-
-function App() {
-  const [user, setUser] = React.useState('');
-
-  if (!user) {
-    return <Login setUser={setUser} />;
-  }
-
-  return <div>App</div>;
-}
-
-export default App;
-
-
-// ---------------
-// Login.js
 import React from 'react';
 
 function Login({ setUser }) {
@@ -53,4 +27,3 @@ function Login({ setUser }) {
 }
 
 export default Login;
-```
